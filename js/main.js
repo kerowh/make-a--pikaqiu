@@ -148,21 +148,6 @@
         overflow: hidden;
     }
 
-    /*小舌头*/
-
-    .lowLip::after{
-        width: 100px;
-        height: 100px;
-        content: '';
-        display: block;
-        background: #FC4A62;
-        border-radius: 50px;
-        position: absolute;
-        left: 50%;
-        margin-left: -48px;
-        bottom: -6px;
-    }
-
     /*好了皮卡丘就画完了*/
     `
 
@@ -180,18 +165,18 @@
                 break
             case 'normal':
                 time = 50
-                break   
+                break
             case 'fast':
                 time = 10
-                break  
+                break
         }
     })
-    
+
     function writecode(prefix,code,fn){
         let contenter = document.querySelector('#code')
         let styTag = document.querySelector('#styleTag')
         let n = 0
-        let id 
+        let id
         id =  setTimeout(function run(){
             n += 1
             contenter.innerHTML = code.slice(0, n)
